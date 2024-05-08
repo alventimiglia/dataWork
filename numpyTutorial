@@ -1,0 +1,83 @@
+import numpy as np
+
+#The Basics
+#Initializing an array
+#a = np.array([1,2,3])
+#print(a)
+
+#List within a list
+#b = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+#print(b)
+
+#Get dimension
+#a.ndim
+#b.ndim
+
+#Get shape
+#b.shape
+
+#Get type
+#a.dtype
+
+#Get size
+#a.itemsize
+
+#Get total size
+#a.nbytes
+
+#Accessing/Changing specific elements
+a = np.array([[1,2,3,4,5,6,7], [8,9,10,11,12,13,14]])
+#Get a specific element [r,c]
+#print(a[1,5])
+
+#Get a specific row
+#a[0, :]
+
+#Get a specific column
+#a[:, 2]
+
+#Getting a bit more fancy [startindex:endindex:stepsize]
+#a[0, 1:-1:2]
+
+#Changing an element
+#a[1,5] = 20
+
+#Initializing different types of arrays
+#All 0s matrix
+#np.zeros((2,3))
+
+#All 1s matrix
+#np.ones((4,2,2))
+
+#Any other number
+#np.full((2,2), 99)
+
+#Random decimal numbers
+#np.random.rand(4,2)
+
+#Random integer values
+#np.random.randint(7, size=(3,3))
+
+#Repeat an array
+#arr = np.array([[1,2,3]])
+#r1 = np.repeat(arr, 3, axis=0)
+#print(r1)
+
+#Be careful when copying arrays
+#a = np.array([1,2,3])
+#b = a.copy()
+
+#Mathematics
+#Can do the same arrays that you do with Python with an array
+#Sin, cos, etc.
+#Linear algebra
+#Statistics (min, max, sum, etc.)
+
+#Reorganizing arrays
+#before = np.array([[1,2,3,4],[5,6,7,8]])
+#after = before.reshape((2,2,2))
+
+#Load data from file
+#filedata = np.genfromtxt('file_name.txt', delimeter=',')
+
+#You can index with a list in NumPy
