@@ -9,3 +9,7 @@ This is an exploration into how to use Plotly using a sample project. There are 
 ## numpyTutorial
 
 This is code that holds notes for working with numpy.
+
+## pandasTutorial
+
+This code holds notes for working with pandas based on a Pokemon dataset.
