@@ -1,0 +1,80 @@
+import pandas as pd
+
+df = pd.read_csv('...pokemon_data.csv')
+#print(df.head(3))
+
+##Read headers
+#print(df.columns)
+df.columns
+
+##Read each Column
+#Read one column: print(df['Name'])
+#Read multiple columns print(df[['Name', 'Type 1', 'HP']])
+
+##Read each row
+#print(df.iloc[1:4])
+
+#To iterate through each row
+#for index, row in df.iterrows():
+    #print(index, row)
+
+#To find specific text-based information in the data
+#print(df.loc[df['Type 1'] == 'Fire'])
+
+##Read a specific location (row, column)
+#print(df.iloc[2,1])
+
+#Gives you information about the data frame
+#print(df.describe())
+
+#Sorting the data values
+#print(df.sort_values('Name'))
+
+#Making changes to the data
+#df['Total'] = df.iloc[:, 4:10].sum(axis=1)
+#axis = 1 adds horizontally and axis = 0 will add vertically
+
+#To rearrange columns
+#cols = list(df.columns.values)
+#df = df[cols[0:4] + [cols[-1]] + cols[4:12]]
+
+#To save your data to a csv (like if you want an updated version with changes)
+#df.to_csv('...', index=False)
+
+#To save to excel
+#df.to_excel('...', index=False)
+
+#To drop a column
+#df = df.drop(columns = ['Total'])
+
+##Filtering Data
+#Pulling only two specific things
+#print(df.loc[(df['Type 1'] == 'Grass') & (df['Type 2'] == 'Poison')])
+
+#Messing with the index of a new data frame
+#new_df.reset_index(drop=True, inplace=True)
+
+#To get certain data that has something like a value
+#print(df.loc[df['Name'].str.contains('Mega')])
+
+#To get certain data that does NOT have something like a value
+#print(df.loc[~df['Name'].str.contains('Mega')])
+
+#Can also use regex expressions
+#import re
+#print(df.loc[df['Type 1'].str.contains('fire|grass', flags=re.I, regex=True)])
+#print(df.loc[df['Name'].str.contains('^pi[a-z]*', flags=re.I, regex=True)])
+
+#Changing data
+#df.loc[df['Type 1'] == 'Fire', 'Type 1'] = 'Flamer'
+#df.loc[df['Type 1'] == 'Fire', 'Legendary'] = True
+#df.loc[df['Total'] > 500, ['Generation', 'Legendary']] = ['Test 1', 'Test 2']
+
+#Aggregate Statistics
+#print(df.groupby('Type 1')['Attack'].mean())
+#.sum()
+#.count()
+
+#Working with large amounts of data
+#for df in pd.read_csv('....', chuncksize=5):
+   # print(df)
