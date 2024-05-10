@@ -11,5 +11,5 @@ import camelot
 #df_premier23.rename(columns = {'FTHG':'home_goals', 'FTAG':'away_goals'}, inplace=True)
 
 #Table extraction from PDF
-#tables = camelot.read_pdf('/Users/annaventimiglia/Downloads/foo.pdf', pages='1')
+#tables = camelot.read_pdf('...foo.pdf', pages='1')
 #print(tables)
