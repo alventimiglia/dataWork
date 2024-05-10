@@ -1,0 +1,15 @@
+import pandas as pd
+import camelot
+
+#simpsons = pd.read_html('https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes_(seasons_1%E2%80%9320)')
+#print(len(simpsons))
+
+#Table extraction - extract CSV files from a website
+#df_premier23 = pd.read_csv('https://www.football-data.co.uk/mmz4281/2324/E0.csv')
+
+#rename columns
+#df_premier23.rename(columns = {'FTHG':'home_goals', 'FTAG':'away_goals'}, inplace=True)
+
+#Table extraction from PDF
+#tables = camelot.read_pdf('/Users/annaventimiglia/Downloads/foo.pdf', pages='1')
+#print(tables)
