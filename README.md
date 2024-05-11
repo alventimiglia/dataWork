@@ -10,6 +10,10 @@ This is an exploration into how to use Plotly using a sample project. There are 
 
 This is a small bit of code demonstrating how to use the camelot library.
 
+## excelDataEntryForm
+
+This is code to demonstrate how the PySimpleGUI library works (with notes). This code uses pandas as well to make a simple data entry form.
+
 ## numpyTutorial
 
 This is code that holds notes for working with numpy.
